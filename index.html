@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Magic word</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <style type="text/css">
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <input id="magicUserInput" type="text">
+    <button id="magicInputButton">Submit your magic word</button>
+
+  <script>
+
+    var magicWord = "Boomshakalakaboom"
+
+    var magicUser = "empty";
+
+    document.getElementById("magicInputButton").onclick = function(){
+
+        magicUser = document.getElementById("magicUserInput").value;
+
+        if(magicUser==magicWord){
+            alert ("Hurrah, you entered the magic word!");
+        } else {
+            alert ("beup, wrong!")
+        }
+        
+
+    }
+
+  </script>
+</body>
+
+</html>
