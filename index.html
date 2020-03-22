@@ -25,11 +25,11 @@
 
     var magicWord = "Boomshakalakaboom"
 
-    var magicUser = "empty";
+
 
     document.getElementById("magicInputButton").onclick = function(){
 
-        magicUser = document.getElementById("magicUserInput").value;
+        var magicUser = document.getElementById("magicUserInput").value;
 
         if(magicUser==magicWord){
             alert ("Hurrah, you entered the magic word!");
